@@ -24,3 +24,11 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
+
+@media screen and (max-width: 550px) {
+  .controlPane {
+    min-width: 384px;
+    width: 80%;
+    height: 144px;
+  }
+}

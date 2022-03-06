@@ -30,7 +30,7 @@
 
 .characterWrapper {
   position: sticky;
-  top: 24px;
+  top: 128px;
   width: 100%;
   min-height: 500px;
   height: min-content;
@@ -38,4 +38,35 @@
 
 .controlColumn {
   width: 80%;
+}
+
+@media screen and (max-width: 550px) {
+  .maxWidthWrapper {
+    width: 100%;
+  }
+
+  .controlColumn {
+    position: relative;
+    width: calc(100% + 64px);
+    display: flex;
+    margin: 100% -32px 0 -32px;
+    padding-left: 32px;
+    gap: 16px;
+    overflow-y: scroll;
+
+    z-index: 1;
+    /* Hide Firefox scrollbar */
+    scrollbar-width: none;
+  }
+
+  .controlColumn::-webkit-scrollbar {
+    display: none;
+  }
+
+  .characterWrapper {
+    position: absolute;
+    top: calc(40% + 128px);
+    left: 10vw;
+    width: calc(100% - 10vw);
+  }
 }
