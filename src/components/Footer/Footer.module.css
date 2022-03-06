@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 30%;
   position: relative;
   padding: 64px;
   background: hsl(0deg, 0%, 5%);
@@ -9,4 +8,10 @@
 
 .footer a {
   color: currentColor;
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    margin-top: 30%;
+  }
 }
